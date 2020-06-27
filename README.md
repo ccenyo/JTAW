@@ -17,7 +17,7 @@ https://tiny.cc/api-docs
 
 ## STEP 2: Get Cracking (Fluent Builders)
 
-The basic principle is simple: You create a BitlyClient with your access token. This is your factory and can be reused and passed around instead of passing around the access token String. Let the `BitlyClient` create a `RequestBuilder` for you and configure it, then make the call to bitly and work with the response. Simple, right? So here goes:
+The basic principle is simple: You create a TinyClient with your access token. This is your factory and can be reused and passed around instead of passing around the access token String. Let the `BitlyClient` create a `RequestBuilder` for you and configure it, then make the call to bitly and work with the response. Simple, right? So here goes:
 
 ```
 TinyClient client = new TinyClient("... access token ...");
