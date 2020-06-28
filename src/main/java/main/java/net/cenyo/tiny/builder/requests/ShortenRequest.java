@@ -16,7 +16,7 @@
 package main.java.net.cenyo.tiny.builder.requests;
 
 
-
+import com.fasterxml.jackson.core.type.TypeReference;
 import main.java.net.cenyo.tiny.builder.Request;
 import main.java.net.cenyo.tiny.model.Response;
 import main.java.net.cenyo.tiny.model.responses.ShortenResponse;
@@ -40,9 +40,9 @@ public class ShortenRequest extends Request<ShortenResponse> {
 	}
 
 	@Override
-	protected Class getClassForMapper() {
-		Response<ShortenResponse> responseResponse = new Response<ShortenResponse>();
-		return responseResponse.getClass();
+	protected TypeReference getClassForMapper() {
+
+		return new TypeReference<Response<ShortenResponse>>() {};
 	}
 
 	@Override

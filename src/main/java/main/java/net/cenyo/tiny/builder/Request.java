@@ -2,6 +2,7 @@ package main.java.net.cenyo.tiny.builder;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import main.java.net.cenyo.tiny.TinyClientException;
 import main.java.net.cenyo.tiny.model.Response;
@@ -46,7 +47,7 @@ public abstract class Request<T>{
 
     public abstract String getEndpoint();
 
-    protected abstract Class getClassForMapper();
+    protected abstract TypeReference getClassForMapper();
 
 
     public void addQueryParameter(String name, String value) {

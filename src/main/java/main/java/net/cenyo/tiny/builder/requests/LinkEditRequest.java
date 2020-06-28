@@ -15,8 +15,7 @@
  */
 package main.java.net.cenyo.tiny.builder.requests;
 
-;
-
+import com.fasterxml.jackson.core.type.TypeReference;
 import main.java.net.cenyo.tiny.builder.Request;
 import main.java.net.cenyo.tiny.model.Response;
 import main.java.net.cenyo.tiny.model.responses.LinkEditResponse;
@@ -35,9 +34,8 @@ public class LinkEditRequest extends Request<LinkEditResponse> {
 	}
 
 	@Override
-	protected Class getClassForMapper() {
-		Response<LinkEditResponse> responseResponse = new Response<LinkEditResponse>();
-		return responseResponse.getClass();
+	protected TypeReference getClassForMapper() {
+		return new TypeReference<Response<LinkEditResponse>>() {};
 	}
 
 

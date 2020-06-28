@@ -19,9 +19,9 @@ package main.java.net.cenyo.tiny.model.responses;
 public class LinkEditResponse extends ToStringSupport {
 
 
-	public String longUrl;
+	public String long_url;
 
-	public String shortUrl;
+	public String short_url;
 
 	public String hash;
 

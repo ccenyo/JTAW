@@ -18,7 +18,7 @@ package main.java.net.cenyo.tiny.model.responses;
 
 public class ShortenResponse extends ToStringSupport {
 
-	public String shortUrl ;
+	public String short_url ;
 
 	public String userHash ;
 
