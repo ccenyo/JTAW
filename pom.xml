@@ -7,6 +7,15 @@
     <groupId>net.cenyo.tiny</groupId>
     <artifactId>JTAW</artifactId>
     <version>1.0</version>
+    <name>JTAW</name>
+    <description>A simple java API Wrapper for shorten links with tiny.cc</description>
+    <developers>
+        <developer>
+            <name>Cenyo</name>
+            <email>medsenyo003@gmail.com</email>
+        </developer>
+    </developers>
+
     <build>
         <plugins>
             <plugin>
