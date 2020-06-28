@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.cenyo.bitly</groupId>
-    <artifactId>TAW</artifactId>
+    <groupId>net.cenyo.tiny</groupId>
+    <artifactId>JTAW</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -41,4 +41,13 @@
         </dependency>
 
     </dependencies>
+
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-cenyo-JTAW</id>
+            <name>cenyo-JTAW</name>
+            <url>https://api.bintray.com/maven/cenyo/JTAW/JTAW/;publish=1</url>
+        </repository>
+    </distributionManagement>
 </project>
