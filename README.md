@@ -15,7 +15,18 @@ the project just started, there are only few methods added. if you want to help 
 
 https://tiny.cc/api-docs
 
-## STEP 2: Get Cracking (Fluent Builders)
+## STEP 2: How to install
+
+```
+	<dependency>
+		<groupId>net.cenyo.tiny</groupId>
+		<artifactId>JTAW</artifactId>
+		<version>1.0.3</version>
+	</dependency>
+````		
+
+
+## STEP 3: Get Cracking (Fluent Builders)
 
 The basic principle is simple: You create a TinyClient with your access token. This is your factory and can be reused and passed around instead of passing around the access token String. Let the `BitlyClient` create a `RequestBuilder` for you and configure it, then make the call to bitly and work with the response. Simple, right? So here goes:
 
@@ -27,7 +38,7 @@ TinyClient client = new TinyClient("... access token ...");
 ```
 
 
-## STEP 3: Working With The Response Object
+## STEP 4: Working With The Response Object
 
 The `Response<T>` is a container that contains 4 important fields:
 
