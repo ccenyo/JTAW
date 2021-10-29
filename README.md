@@ -1,5 +1,7 @@
 # tiny.cc api client built in java
 
+## With the release of the V3 of their API, this wrapper does not work anymore.
+
 This is a simple java client for the [tiny.cc api](https://tiny.cc/api-docs). It is:
 
 * small
