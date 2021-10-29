@@ -16,11 +16,13 @@
         </developer>
     </developers>
 
-    <scm>
-        <connection>scm:git:https://github.com/ccenyo/JTAW.git</connection>
-        <developerConnection>scm:git:git@github.com:ccenyo/JTAW.git</developerConnection>
-        <url>https://github.com/ccenyo/JTAW</url>
-    </scm>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub ccenyo Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/ccenyo/JTAW</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
