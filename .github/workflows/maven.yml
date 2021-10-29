@@ -21,7 +21,7 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: |
-        echo "${ACCESS_TOKEN}" > .accesstoken.xml
-        mvn -B package --file pom.xml
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          echo "${ACCESS_TOKEN}" > .accesstoken
+          mvn -B package --file pom.xml
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
